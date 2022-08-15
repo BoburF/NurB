@@ -102,13 +102,22 @@ nav{
     justify-content: center;
     background: #007bff;
     color: #fff;
+    transition: .3s;
 }
 
-.navigation_menu li{
+.navigation_menu .li{
     cursor: pointer;
     padding: 0 30px;
     position: relative;
     font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation_menu .li:hover{
+    background-color: #0360c4;
 }
 
 .dropdown_btn{
@@ -128,9 +137,14 @@ nav{
     width: 1440px;
     background: #fff;
     color: #000;
+    display: flex;
     justify-content: space-between;
     padding: 20px;
     display: none;
+}
+
+.dropdown_menu ul{
+    width: 300px;
 }
 
 .line{

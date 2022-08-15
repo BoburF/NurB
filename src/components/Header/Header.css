@@ -1,4 +1,13 @@
 header{
-    background-image: url(https://htmldemo.net/hmart/hmart/assets/images/hero/bg/hero-bg-1.webp);
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.hero{
+    background-image: url(../../../public/img/bcg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 }
