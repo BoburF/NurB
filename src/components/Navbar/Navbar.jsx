@@ -22,7 +22,17 @@ export default class Navbar extends Component {
           </div>
         </div>
         <div className="container navigation">
-          
+          <ul className='row navigation_menu align_items_center'>
+            <li>Home</li>
+            <li>About</li>
+            <li><p className='dropdown_btn'>Shop <i className="fa-solid fa-angle-down"></i></p>
+            <div className="dropdown_menu">
+
+            </div>
+            </li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
         </div>
       </nav>
     )
