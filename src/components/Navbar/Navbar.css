@@ -107,6 +107,8 @@ nav{
 .navigation_menu li{
     cursor: pointer;
     padding: 0 30px;
+    position: relative;
+    font-size: 20px;
 }
 
 .dropdown_btn{
@@ -116,4 +118,33 @@ nav{
 
 .dropdown_btn i{
     margin-left: 15px;
+}
+
+.dropdown_menu{
+    position: absolute;
+    top: 100%;
+    left: 51%;
+    transform: translateX(-50%);
+    width: 1440px;
+    background: #fff;
+    color: #000;
+    justify-content: space-between;
+    padding: 20px;
+    display: none;
+}
+
+.line{
+    width: 1px;
+    background: rgba(0, 0, 0, 0.418);
+}
+
+.btn_drop{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_drop:hover .dropdown_menu{
+    display: flex;
 }

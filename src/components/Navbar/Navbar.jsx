@@ -25,9 +25,31 @@ export default class Navbar extends Component {
           <ul className='row navigation_menu align_items_center'>
             <li>Home</li>
             <li>About</li>
-            <li><p className='dropdown_btn'>Shop <i className="fa-solid fa-angle-down"></i></p>
+            <li className='btn_drop'><p className='dropdown_btn'>Shop <i className="fa-solid fa-angle-down"></i></p>
             <div className="dropdown_menu">
-
+              <ul>
+                <li>Smartphones</li>
+                <li>Ios</li>
+                <li>Ios</li>
+              </ul>
+              <div className="line"></div>
+              <ul>
+                <li>Smartphones</li>
+                <li>Ios</li>
+                <li>Ios</li>
+              </ul>
+              <div className="line"></div>
+              <ul>
+              <li>Smartphones</li>
+                <li>Ios</li>
+                <li>Ios</li>
+              </ul>
+              <div className="line"></div>
+              <ul>
+              <li>Smartphones</li>
+                <li>Ios</li>
+                <li>Ios</li>
+              </ul>
             </div>
             </li>
             <li>Blog</li>
