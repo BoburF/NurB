@@ -14,23 +14,32 @@ nav{
     color: #007bff;
 }
 
-.fa-shopping-bag,
-.fa-heart{
+.like_and_backet{
+    display: flex;
+    align-items: center;
+}
+
+.like_and_backet svg{
+    width: 25px;
+    height: 25px;
     color: #fff;
-    font-size: 25px;
     position: relative;
     transition: .3s;
 }
 
-.fa-heart{
+.like_and_backet svg:first-child{
     margin-right: 20px;
 }
 
-.fa-shopping-bag::after{
-    content: attr(data-count);
+.shop_cart{
+    position: relative;
+    width: 1em;
+}
+
+.shop_cart span{
     position: absolute;
-    top: -12px;
-    right: -14px;
+    top: -15px;
+    right: -20px;
     width: 25px;
     height: 25px;
     background: #007bff;
@@ -42,8 +51,7 @@ nav{
     border-radius: 50%;
 }
 
-.fa-shopping-bag:hover,
-.fa-heart:hover{
+.like_and_backet svg:hover{
     color: #007bff;
     cursor: pointer;
 }
@@ -87,8 +95,9 @@ nav{
     border-bottom-right-radius: 5px;
 }
 
-.search_div i{
-    font-size: 18px;
+.search_div svg{
+    width: 22px;
+    height: 22px;
     cursor: pointer;
 }
 
@@ -97,12 +106,14 @@ nav{
 }
 
 .navigation_menu{
-    width: 100%;
+    width: 100vw;
     height: 50px;
     justify-content: center;
     background: #007bff;
     color: #fff;
     transition: .3s;
+    transform: translateX(-50%);
+    margin-left: 50%;
 }
 
 .navigation_menu .li{
@@ -114,6 +125,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .3s;
 }
 
 .navigation_menu .li:hover{
@@ -125,7 +137,7 @@ nav{
     align-items: center;
 }
 
-.dropdown_btn i{
+.dropdown_btn svg{
     margin-left: 15px;
 }
 
@@ -134,22 +146,53 @@ nav{
     top: 100%;
     left: 51%;
     transform: translateX(-50%);
-    width: 1440px;
+    width: 1170px;
     background: #fff;
     color: #000;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
     display: none;
 }
 
 .dropdown_menu ul{
-    width: 300px;
+    width: 230px;
+}
+
+.dropdown_menu ul li:first-child{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.dropdown_menu ul li:first-child:hover{
+    background-color: #fff;
+    padding: 0;
+    color: #007bff;
+}
+
+.dropdown_menu ul li{
+    font-size: 18px;
+    margin-bottom: 5px;
+    transition: .3s;
+    border-radius: 5px;
+    padding: 3px 10px;
+    overflow: auto;
+}
+
+.dropdown_menu ul li:hover{
+    background-color: #ccc;
+    padding-left: 30px;
 }
 
 .line{
     width: 1px;
     background: rgba(0, 0, 0, 0.418);
+}
+
+.line:last-child{
+    display: none;
 }
 
 .btn_drop{
